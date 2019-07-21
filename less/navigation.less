@@ -11,19 +11,35 @@
     height: 85px;
     border-bottom: 2px dashed @navigation-border;
 
-    .main-nav{
-          width:45%;
-        display:flex;
-        justify-content: space-between;
-        text-decoration: none;
+    @media @mobile {
+      flex-direction: column;
+      height: auto;
+    }
 
-        a{
-            text-decoration:none;
-            color:black;
-            font-size:1.6rem;
-            font-family: roboto,sans-serif;
-            font-weight: bold;
+    h1{
+          @media @mobile{
+            padding-top: 10px;
         }
+    }
+
+    .main-nav {
+      width: 45%;
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+
+      @media @mobile{
+          width: 85%;
+          padding: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+        font-family: roboto, sans-serif;
+        font-weight: bold;
+      }
     }
   }
 }
