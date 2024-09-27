@@ -1,1 +1,14 @@
 // Mixins in here
+
+.test{
+    border: 1px solid blue;
+}
+
+.custom-btn(@border-radius: 10px, @background: teal, @font-color:white){
+    border-radius:@border-radius;
+    background:@background;
+    color:@font-color;
+    width:65%;
+    height:10%;
+
+}
